@@ -30,7 +30,7 @@ jobs:
       fail-fast: false
       max-parallel: 2
       matrix:
-        os: [ ubuntu-20.04 ]
+        os: ubuntu-20.04
         ubuntu-version: ubuntu-20.04
 
     permissions:
