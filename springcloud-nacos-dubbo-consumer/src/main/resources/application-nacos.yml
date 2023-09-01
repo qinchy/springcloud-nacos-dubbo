@@ -1,0 +1,26 @@
+server:
+  port: 9091
+
+dubbo:
+  application:
+    id: springcloud-nacos-dubbo-consumer
+    dump-directory: /tmp
+    name: springcloud-nacos-dubbo-consumer
+  monitor:
+    protocol: dubbo-registry
+  registry:
+    address: nacos://192.168.43.1:8848
+    check: false
+  config-center:
+    address: nacos://192.168.43.1:8848
+  metadata-report:
+    address: nacos://192.168.43.1:8848
+  protocol:
+    name: dubbo
+    port: 28081
+  consumer:
+    actives: 20
+    check: false
+  cloud:
+    subscribed-services: springcloud-nacos-dubbo-provider
+

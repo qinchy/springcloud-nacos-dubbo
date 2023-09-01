@@ -1,0 +1,27 @@
+server:
+  port: 9090
+
+dubbo:
+  application:
+    id: springcloud-nacos-dubbo-provider
+    dump-directory: /tmp
+    name: springcloud-nacos-dubbo-provider
+  monitor:
+    protocol: dubbo-registry
+  protocol:
+    name: dubbo
+    port: 28080
+  provider:
+    delay: -1
+    dispatcher: message
+    loadbalance: leastactive
+    threadpool: cached
+    timeout: 60000
+  registry:
+    address: nacos://192.168.43.1:8848
+  config-center:
+    address: nacos://192.168.43.1:8848
+  metadata-report:
+    address: nacos://192.168.43.1:8848
+  scan:
+    base-packages: com.qinchy.springcloudnacosdubbo.provider.service
