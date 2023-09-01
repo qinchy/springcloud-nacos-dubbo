@@ -22,8 +22,6 @@ on:
 
 jobs:
   build:
-    env:
-      DOCKER_IMAGE: ${{ matrix.ubuntu-version }}
 
     runs-on: ${{ matrix.os }}
     strategy:
@@ -31,7 +29,6 @@ jobs:
       max-parallel: 2
       matrix:
         os: ubuntu-latest
-        ubuntu-version: ubuntu-latest
 
     permissions:
       contents: read
