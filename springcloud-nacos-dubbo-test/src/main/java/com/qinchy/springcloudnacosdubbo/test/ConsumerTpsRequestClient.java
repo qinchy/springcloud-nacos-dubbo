@@ -44,9 +44,9 @@ public class ConsumerTpsRequestClient extends AbstractJavaSamplerClient {
         } catch (Exception e) {
             result.setSuccessful(false);
             log.error("请求报错", e);
+        } finally {
+            result.sampleEnd();
         }
-
-        result.sampleEnd();
 
         return result;
     }
