@@ -135,4 +135,23 @@ sampleResult.setResponseData("登录成功", "utf-8"); // 设置Response,如果�
 [![](:/05356a694d13475c91f5fe08f000125a)
 ](javascript:void(0); "复制代码")
 
+3、jmeter命令行启动方式
+D:\Dev_Tools\apache-jmeter-5.5\bin
+λ jmeter.bat -n -t d:\数研所\JavaRequestSample.jmx -l d:\数研所\JavaRequestSample.result -e -o d:\数研所\JavaRequestSample\
+Creating summariser <summary>
+Created the tree successfully using d:\数研所\JavaRequestSample.jmx
+Starting standalone test @ September 13, 2023 10:20:09 AM CST (1694571609140)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +  50124 in 00:00:20 = 2463.8/s Avg:    38 Min:     0 Max:  2156 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+summary +  57238 in 00:00:30 = 1908.8/s Avg:    53 Min:     1 Max:  3291 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+summary = 107362 in 00:00:50 = 2133.2/s Avg:    46 Min:     0 Max:  3291 Err:     0 (0.00%)
+summary + 110980 in 00:00:30 = 3699.3/s Avg:    26 Min:     1 Max:   819 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+summary = 218342 in 00:01:20 = 2718.1/s Avg:    36 Min:     0 Max:  3291 Err:     0 (0.00%)
+summary + 101862 in 00:00:30 = 3395.4/s Avg:    29 Min:     1 Max:   519 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+summary = 320204 in 00:01:50 = 2902.2/s Avg:    34 Min:     0 Max:  3291 Err:     0 (0.00%)
+summary + 111540 in 00:00:30 = 3717.4/s Avg:    26 Min:     0 Max:   639 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+summary = 431744 in 00:02:20 = 3076.5/s Avg:    32 Min:     0 Max:  3291 Err:     0 (0.00%)
+summary +  90567 in 00:00:30 = 3019.4/s Avg:    33 Min:     1 Max:   760 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+summary = 522311 in 00:02:50 = 3066.5/s Avg:    32 Min:     0 Max:  3291 Err:     0 (0.00%)
+
 文中代码提取链接: https://pan.baidu.com/s/182pOzVR4S2Q0jEhjnN5wjA 提取码: imgc 
