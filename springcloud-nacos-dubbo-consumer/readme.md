@@ -1,7 +1,7 @@
 # jvm参数
 ```shell
 java -server -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=200s,filename=flight.jfr 
--Xms2048m -Xmx2048m -Xmn1024m -XX:TieredStopAtLevel=1 -noverify 
+-Xms2048m -Xmx2048m -Xmn1024m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=128m -XX:TieredStopAtLevel=1 -noverify 
 -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true 
 -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true "-Dmanagement.endpoints.jmx.exposure.include=*" 
 -javaagent:D:\Dev_Tools\ideaIU-2022.3.2\lib\idea_rt.jar=2188:D:\Dev_Tools\ideaIU-2022.3.2\bin -Dfile.encoding=UTF-8 
