@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @RestController
@@ -16,7 +17,7 @@ public class PeopleController {
     private PeopleService peopleService;
 
     @GetMapping("/selectAll")
-    public List<String> selectAll() {
+    public List<String> selectAll(HttpServletResponse resp) {
         return peopleService.selectAll();
     }
 }

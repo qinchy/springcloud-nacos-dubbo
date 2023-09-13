@@ -1,5 +1,3 @@
 # Project exclude paths
-/springcloud-nacos-dubbo-api/target/
-/springcloud-nacos-dubbo-consumer/target/
-/springcloud-nacos-dubbo-provider/target/
+**/target/
 /.idea
